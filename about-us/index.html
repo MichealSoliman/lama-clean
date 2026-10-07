@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن | لمعة كلين للنظافة بجدة - مسيرتنا ورؤيتنا</title>
+  <meta name="description"
+    content="تعرف على لمعة كلين، الشركة الرائدة في خدمات التنظيف بجدة. نجمع بين الخبرة الطويلة والتقنيات الحديثة لتقديم خدمات تنظيف منازل وفلل وخزانات تليق بعملائنا.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lama-clean.com/about-us/">
+  <link rel="icon" type="image/webp" href="/asstes/img/logo.webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="من نحن | لمعة كلين للنظافة بجدة - مسيرتنا ورؤيتنا">
+  <meta property="og:description"
+    content="تعرف على لمعة كلين، الشركة الرائدة في خدمات التنظيف بجدة. نجمع بين الخبرة الطويلة والتقنيات الحديثة لتقديم خدمات تنظيف منازل وفلل وخزانات تليق بعملائنا.">
+  <meta property="og:url" content="https://lama-clean.com/about-us/">
+  <meta property="og:image" content="https://lama-clean.com/asstes/img/logo.webp">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:site_name" content="لمعة كلين - شركة تنظيف بجدة">
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="../asstes/css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../asstes/css/output.css">
+  <link rel="stylesheet" href="/asstes/css/all.min.css" media="print"
+    onload="this.media='all'">
+
+
+  <style>
+    .about-hero {
+      position: relative;
+      background: #1e3a8a;
+      /* Deep blue base */
+      min-height: 450px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg-image {
+      position: absolute;
+      inset: 0;
+      background-image: url('../asstes/img/hero-background.webp');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(74, 111, 165, 0.95) 0%, rgba(30, 58, 138, 0.85) 50%, rgba(23, 37, 84, 0.8) 100%);
+    }
+
+    .glass-content {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 2rem;
+      padding: 3rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    @keyframes float-bubble {
+
+      0%,
+      100% {
+        transform: translateY(0) translateX(0);
+      }
+
+      50% {
+        transform: translateY(-20px) translateX(10px);
+      }
+    }
+
+    .bubble {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .about-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #f9fafb;
+      clip-path: ellipse(50% 100% at 50% 100%);
+    }
+
+    .sticky-nav {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-12px);
+      border-color: #10b981;
+      box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.15);
+    }
+
+    .feature-icon-wrapper {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+      border-radius: 2rem;
+      color: #4a6fa5;
+      font-size: 2rem;
+      transition: all 0.4s ease;
+    }
+
+    .feature-card:hover .feature-icon-wrapper {
+      background: #4a6fa5;
+      color: #fff;
+      transform: rotate(10deg);
+    }
+
+    .service-mini-card {
+      background: #fff;
+      border: 1px solid #f1f5f9;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-mini-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #4a6fa5 0%, #2867ed 100%);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.4s ease;
+      border-radius: inherit;
+    }
+
+    .service-mini-card:hover {
+      color: #fff;
+      transform: translateY(-8px);
+      border-color: transparent;
+    }
+
+    .service-mini-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-mini-card:hover .icon-box {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .icon-box {
+      transition: all 0.4s ease;
+    }
+
+    /* Footer styles from home */
+    .gradient-bg {
+      background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #4a5568 100%);
+    }
+
+    .logo-glow {
+      filter: drop-shadow(0 0 10px rgba(74, 111, 165, 0.5));
+    }
+
+    .floating-bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(74, 111, 165, 0.1);
+      animation: float-footer 6s ease-in-out infinite;
+    }
+
+    @keyframes float-footer {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-10px) rotate(180deg);
+      }
+    }
+
+    .footer-link {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .footer-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: #4a6fa5;
+      transition: width 0.3s ease;
+    }
+
+    .footer-link:hover::after {
+      width: 100%;
+    }
+
+    .newsletter-input {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-3px) scale(1.1);
+    }
+  </style>
+</head>
+
+<body class="font-tajawal bg-gray-50 text-gray-800">
+
+  <!-- Top Info Bar -->
+  <div class="bg-primary text-white py-2 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center text-sm">
+      <div class="hidden md:flex items-center gap-6">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-map-marker-alt text-accent"></i>
+          <span>جدة، المملكة العربية السعودية</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-clock text-accent"></i>
+          <span>خدمة 24/7</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-6 w-full md:w-auto justify-center md:justify-end">
+        <a href="tel:0575797438" class="flex items-center gap-2 hover:text-accent transition-colors">
+          <i class="fas fa-phone"></i>
+          <span>0575797438</span>
+        </a>
+        <div class="w-px h-4 bg-white opacity-30"></div>
+        <a href="https://wa.me/966575797438" class="flex items-center gap-2 hover:text-accent transition-colors">
+          <i class="fab fa-whatsapp"></i>
+          <span>واتساب</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="sticky-nav sticky top-0 z-50 shadow-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center gap-3">
+          <div class="w-14 h-12 px-1 rounded-xl bg-white flex items-center justify-center shadow-sm">
+            <img src="../asstes/img/logo.webp" alt="لمعة كلين" width="50" height="48">
+          </div>
+          <div>
+            <div class="text-xl md:text-2xl font-black text-gray-900">لمعة كلين للنظافة</div>
+            <p class="text-primary text-xs font-bold">بجدة</p>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="text-gray-700 hover:text-primary font-bold transition-colors">الرئيسية</a>
+          <div class="nav-services-group relative">
+            <a href="/services/"
+              class="text-gray-700 hover:text-primary font-bold transition-colors flex items-center gap-2">
+              خدماتنا
+              <i class="fas fa-chevron-down text-xs opacity-70 transition-transform duration-300"></i>
+            </a>
+            <div
+              class="nav-services-panel absolute right-0 mt-0 w-64 bg-white border border-gray-200 rounded-xl shadow-xl z-[60] py-2 overflow-hidden">
+              <a href="/services/cleaning-apartments/"
+                class="block px-4 py-2.5 text-sm hover:bg-emerald-50 transition-colors">تنظيف الشقق</a>
+              <a href="/services/cabinet-cleaning/"
+                class="block px-4 py-2.5 text-sm hover:bg-emerald-50 transition-colors">تنظيف وتعقيم الخزانات</a>
+              <a href="/services/cleaning-homes/"
+                class="block px-4 py-2.5 text-sm hover:bg-emerald-50 transition-colors">تنظيف المنازل</a>
+              <a href="/services/villa-cleaning-in-jeddah/"
+                class="block px-4 py-2.5 text-sm hover:bg-emerald-50 transition-colors">تنظيف الفلل والقصور</a>
+              <a href="/services/office-and-company-cleaning/"
+                class="block px-4 py-2.5 text-sm hover:bg-emerald-50 transition-colors">تنظيف المكاتب والشركات</a>
+              <a href="/services/majlis-cleaning/"
+                class="block px-4 py-2.5 text-sm hover:bg-emerald-50 transition-colors">تنظيف المجالس</a>
+              <a href="/services/insect-infestation/"
+                class="block px-4 py-2.5 text-sm hover:bg-emerald-50 transition-colors">مكافحة الحشرات</a>
+            </div>
+          </div>
+          <a href="/about-us/" class="text-primary font-bold transition-colors">من نحن</a>
+          <a href="/blogs/" class="text-gray-700 hover:text-primary font-bold transition-colors">المدونة</a>
+          <a href="/#contact" class="text-gray-700 hover:text-primary font-bold transition-colors">اتصل بنا</a>
+        </div>
+
+        <div class="hidden md:block">
+          <a href="https://wa.me/966575797438"
+            class="bg-primary text-white font-bold py-3 px-6 rounded-2xl hover:scale-105 transition-transform inline-block">
+            <i class="fas fa-calendar-check ml-2"></i>احجز الآن
+          </a>
+        </div>
+
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5">
+          <span class="w-6 h-0.5 bg-gray-700 rounded"></span>
+          <span class="w-6 h-0.5 bg-gray-700 rounded"></span>
+          <span class="w-6 h-0.5 bg-gray-700 rounded"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-100 p-4 space-y-4 shadow-xl">
+      <a href="/" class="block text-gray-700 font-bold py-2">الرئيسية</a>
+      <details class="rounded-lg border border-gray-100 overflow-hidden">
+        <summary
+          class="block text-gray-700 hover:text-primary font-bold py-2 px-0 list-none cursor-pointer flex items-center justify-between">
+          <span>خدماتنا</span>
+          <i class="fas fa-chevron-down text-xs"></i>
+        </summary>
+        <div class="pb-2 bg-slate-50 mt-2">
+          <a href="/services/cleaning-apartments/"
+            class="block py-2.5 px-6 text-gray-700 hover:text-primary hover:bg-white transition-colors text-sm">تنظيف
+            الشقق</a>
+          <a href="/services/cabinet-cleaning/"
+            class="block py-2.5 px-6 text-gray-700 hover:text-primary hover:bg-white transition-colors text-sm">تنظيف
+            وتعقيم الخزانات</a>
+          <a href="/services/cleaning-homes/"
+            class="block py-2.5 px-6 text-gray-700 hover:text-primary hover:bg-white transition-colors text-sm">تنظيف
+            المنازل</a>
+          <a href="/services/villa-cleaning-in-jeddah/"
+            class="block py-2.5 px-6 text-gray-700 hover:text-primary hover:bg-white transition-colors text-sm">تنظيف
+            الفلل والقصور</a>
+          <a href="/services/office-and-company-cleaning/"
+            class="block py-2.5 px-6 text-gray-700 hover:text-primary hover:bg-white transition-colors text-sm">تنظيف
+            المكاتب والشركات</a>
+          <a href="/services/majlis-cleaning/"
+            class="block py-2.5 px-6 text-gray-700 hover:text-primary hover:bg-white transition-colors text-sm">تنظيف
+            المجالس</a>
+          <a href="/services/insect-infestation/"
+            class="block py-2.5 px-6 text-gray-700 hover:text-primary hover:bg-white transition-colors text-sm">مكافحة
+            الحشرات</a>
+        </div>
+      </details>
+      <a href="/about-us/" class="block text-primary font-bold py-2">من نحن</a>
+      <a href="/blogs/" class="block text-gray-700 font-bold py-2">المدونة</a>
+      <a href="/#contact" class="block text-gray-700 font-bold py-2">اتصل بنا</a>
+      <a href="https://wa.me/966575797438"
+        class="block bg-primary text-white text-center font-bold py-3 rounded-xl">احجز الآن</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="about-hero text-white">
+      <div class="hero-bg-image"></div>
+      <div class="hero-overlay"></div>
+
+      <!-- Decorative Bubbles -->
+      <div class="bubble w-20 h-20 top-10 left-[10%]" style="animation: float-bubble 6s infinite ease-in-out;"></div>
+      <div class="bubble w-32 h-32 bottom-10 right-[5%]" style="animation: float-bubble 8s infinite ease-in-out -2s;">
+      </div>
+      <div class="bubble w-16 h-16 top-40 right-[15%]" style="animation: float-bubble 5s infinite ease-in-out -1s;">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10 w-full py-14">
+        <div class="max-w-4xl mx-auto text-center">
+          <nav
+            class="flex justify-center mb-6 text-sm font-bold bg-white/10 w-fit mx-auto px-4 py-1.5 rounded-full backdrop-blur-md border border-white/20">
+            <ol class="flex items-center gap-2">
+              <li><a href="/" class="hover:text-blue-200 transition-colors">الرئيسية</a></li>
+              <li><i class="fas fa-chevron-left text-[10px] opacity-50"></i></li>
+              <li class="text-blue-100">من نحن</li>
+            </ol>
+          </nav>
+
+          <div class="glass-content animate-fade-in">
+            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight">
+              نصنع <span class="text-blue-300">اللمعان</span> <br> في كل زاوية
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto">
+              لمعة كلين ليست مجرد شركة تنظيف، بل هي تجربة من الرفاهية والنظافة الفائقة بدأت من قلب جدة لتخدم كل بيت
+              سعودي.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Identity Section -->
+    <section class="py-12 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <!-- Mission -->
+          <div
+            class="p-8 bg-slate-50 rounded-[2rem] border-b-4 border-blue-500 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div
+              class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-inner">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">رسالتنا</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              تقديم خدمات تنظيف تفوق التوقعات، تجمع بين الدقة، الأمان، والاحترافية، لنمنح كل عميل بيئة صحية ومشرقة تليق
+              به.
+            </p>
+          </div>
+
+          <!-- Vision -->
+          <div
+            class="p-8 bg-slate-50 rounded-[2rem] border-b-4 border-emerald-500 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div
+              class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-inner">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">رؤيتنا</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              أن نكون الخيار الأول والاسم الأكثر ثقة في قطاع خدمات النظافة والتعقيم بالمملكة، متميزين بالابتكار والجودة
+              المستدامة.
+            </p>
+          </div>
+
+          <!-- Values -->
+          <div
+            class="p-8 bg-slate-50 rounded-[2rem] border-b-4 border-accent shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div
+              class="w-16 h-16 bg-blue-50 text-accent rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-inner">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">قيمنا</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              الأمانة في العمل، الالتزام الصارم بالمواعيد، والارتقاء المستمر بمستوى الخدمة لضمان رضاكم الدائم.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="py-14">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-r-4 border-primary pr-4">لمعة كلين.. ريادة في عالم
+              النظافة</h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              تأسست شركة لمعة كلين في مدينة جدة لتكون الحل الأمثل والآمن لكل من يبحث عن التميز والراحة. نحن لسنا مجرد
+              شركة تنظيف، بل شريكك في الحفاظ على بيئة صحية ومشرقة لعائلتك أو لموظفيك.
+            </p>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+              بفضل فريقنا المدرب وأحدث المعدات العالمية، استطعنا خلال سنوات قليلة أن نبني قاعدة عريضة من العملاء
+              الواثقين في جودة خدماتنا، سواء في المنازل، الفلل، المكاتب، أو حتى في تعقيم خزانات المياه.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="bg-white p-4 rounded-xl shadow-sm border-r-4 border-accent">
+                <div class="text-2xl font-black text-primary mb-1">+5000</div>
+                <div class="text-sm text-gray-500 font-bold">عميل سعيد</div>
+              </div>
+              <div class="bg-white p-4 rounded-xl shadow-sm border-r-4 border-accent">
+                <div class="text-2xl font-black text-primary mb-1">100%</div>
+                <div class="text-sm text-gray-500 font-bold">جودة مضمونة</div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden shadow-2xl transform rotate-2">
+            <img src="../asstes/img/hero-1.webp" alt="فريق لمعة كلين" class="w-25 h-25 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-16 bg-slate-50 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-100/50 rounded-full blur-3xl -mr-48 -mt-48"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl -ml-48 -mb-48"></div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <span
+            class="inline-block text-primary font-bold text-sm tracking-widest uppercase mb-3 bg-emerald-100 px-4 py-1 rounded-full">مميزاتنا</span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">لماذا يختارنا العملاء؟</h2>
+          <p class="text-gray-500 max-w-2xl mx-auto text-lg">نحن لا نقدم مجرد تنظيف، بل نقدم راحة بال تامة من خلال
+            معاييرنا الصارمة في الجودة والأمان.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Feature 1 -->
+          <div class="feature-card p-10 rounded-[3rem] text-center group">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">كوادر احترافية</h3>
+            <p class="text-gray-600 leading-relaxed">فريقنا ليس مجرد عمالة، بل خبراء مدربون على أرقى معايير الضيافة
+              والنظافة الفندقية لضمان أعلى مستوى من الإتقان.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card p-10 rounded-[3rem] text-center group">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">تكنولوجيا حديثة</h3>
+            <p class="text-gray-600 leading-relaxed">نستخدم أحدث ما توصلت إليه تكنولوجيا التنظيف بالبخار والتعقيم
+              بالأوزون لضمان بيئة خالية تماماً من الميكروبات.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card p-10 rounded-[3rem] text-center group">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">أمان وموثوقية</h3>
+            <p class="text-gray-600 leading-relaxed">نستخدم منظفات حيوية (Bio) آمنة 100% على صحة أطفالكم وحيواناتكم
+              الأليفة، مع الالتزام التام بخصوصية منازلكم.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Quick Overview -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-black text-gray-900 mb-4">ماذا نقدم لكم؟</h2>
+          <p class="text-gray-500 font-medium">حلول تنظيف شاملة مصممة لتلبية كافة احتياجاتكم بجودة لا تضاهى</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Service 1 -->
+          <a href="/services/cleaning-homes/"
+            class="service-mini-card p-8 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center">
+            <div
+              class="icon-box w-16 h-16 bg-emerald-50 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">تنظيف المنازل</h3>
+            <p class="text-sm opacity-80 leading-relaxed">نظافة عميقة لكل ركن في منزلك لضمان بيئة صحية ومريحة.</p>
+          </a>
+
+          <!-- Service 2 -->
+          <a href="/services/villa-cleaning-in-jeddah/"
+            class="service-mini-card p-8 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center">
+            <div
+              class="icon-box w-16 h-16 bg-emerald-50 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fas fa-vihara"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">تنظيف الفلل</h3>
+            <p class="text-sm opacity-80 leading-relaxed">عناية خاصة بالمساحات الكبيرة والواجهات والحدائق بدقة عالية.
+            </p>
+          </a>
+
+          <!-- Service 3 -->
+          <a href="/services/cabinet-cleaning/"
+            class="service-mini-card p-8 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center">
+            <div
+              class="icon-box w-16 h-16 bg-emerald-50 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fas fa-tint"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">تنظيف الخزانات</h3>
+            <p class="text-sm opacity-80 leading-relaxed">تعقيم وغسيل الخزانات بأحدث المواد لضمان نقاء المياه دائماً.
+            </p>
+          </a>
+
+          <!-- Service 4 -->
+          <a href="/services/insect-infestation/"
+            class="service-mini-card p-8 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center">
+            <div
+              class="icon-box w-16 h-16 bg-emerald-50 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fas fa-bug"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">مكافحة الحشرات</h3>
+            <p class="text-sm opacity-80 leading-relaxed">برامج وقائية وعلاجية للتخلص من الآفات بضمان يدوم طويلاً.</p>
+          </a>
+        </div>
+
+        <div class="mt-16 text-center">
+          <a href="/services/"
+            class="group inline-flex items-center gap-3 bg-gray-900 text-white font-bold py-4 px-10 rounded-2xl hover:bg-primary transition-all duration-300">
+            استكشف جميع خدماتنا
+            <i class="fas fa-arrow-left group-hover:-translate-x-2 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-5xl font-black mb-8">هل أنت مستعد لتجربة نظافة تفوق التوقعات؟</h2>
+        <p class="text-xl mb-10 text-white/80">انضم إلى آلاف العملاء الراضين في جدة واحصل على خصم خاص عند حجزك الأول.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0575797438"
+            class="bg-accent text-black font-bold py-4 px-10 rounded-2xl text-lg hover:scale-105 transition-transform">
+            <i class="fas fa-phone ml-2"></i>اتصل بنا الآن
+          </a>
+          <a href="https://wa.me/966575797438"
+            class="bg-white text-primary font-bold py-4 px-10 rounded-2xl text-lg hover:scale-105 transition-transform">
+            <i class="fab fa-whatsapp ml-2"></i>تواصل عبر واتساب
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- الفوتر المطور -->
+  <footer class="relative gradient-bg text-white pt-16 pb-8 overflow-hidden"
+    style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #4a5568 100%)">
+
+    <!-- الفقاعات العائمة -->
+    <div class="floating-bubble w-6 h-6 top-20 left-1/4" style="animation-delay: 0s;"></div>
+    <div class="floating-bubble w-4 h-4 top-32 right-1/3" style="animation-delay: 2s;"></div>
+    <div class="floating-bubble w-8 h-8 bottom-40 left-1/2" style="animation-delay: 4s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- القسم العلوي -->
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-12">
+        <!-- معلومات الشركة -->
+        <div class="lg:col-span-2">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-14 h-12 px-1 rounded-xl bg-white flex items-center justify-center text-white logo-glow">
+              <img src="../asstes/img/logo.webp" loading="lazy" alt="لمعة كلين" width="50">
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">لمعة كلين</h3>
+              <p class="text-blue-300 text-sm font-medium">جدة - المملكة العربية السعودية</p>
+            </div>
+          </div>
+          <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+            نقدم خدمات تنظيف استثنائية تجعل مساحتك تلمع بروعة وجمال في مدينة جدة. نحن نستخدم أحدث التقنيات ومواد
+            التنظيف الآمنة لضمان بيئة نظيفة وصحية.
+          </p>
+
+          <!-- معلومات الاتصال -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 text-gray-300">
+              <i class="fas fa-phone text-blue-400"></i>
+              <span>0575797438</span>
+            </div>
+            <div class="flex items-center gap-3 text-gray-300">
+              <i class="fas fa-envelope text-blue-400"></i>
+              <span>info@lamaaclean.com</span>
+            </div>
+            <div class="flex items-center gap-3 text-gray-300">
+              <i class="fas fa-map-marker-alt text-blue-400"></i>
+              <span>جدة - حي السلامة - شارع الملك فهد</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- روابط سريعة -->
+        <div>
+          <h4 class="text-lg font-bold mb-6 pb-2 border-b border-gray-700">روابط سريعة</h4>
+          <ul class="space-y-3">
+            <li><a href="/#home" class="footer-link text-gray-300 hover:text-white block">الرئيسية</a></li>
+            <li><a href="/services/" class="footer-link text-gray-300 hover:text-white block">خدماتنا</a></li>
+            <li><a href="/about-us/" class="footer-link text-gray-300 hover:text-white block">من نحن</a></li>
+            <li><a href="/#pricing" class="footer-link text-gray-300 hover:text-white block">الباقات</a></li>
+            <li><a href="/#contact" class="footer-link text-gray-300 hover:text-white block">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- خدماتنا -->
+        <div>
+          <h4 class="text-lg font-bold mb-6 pb-2 border-b border-gray-700">خدماتنا</h4>
+          <ul class="space-y-3">
+            <li><a href="/services/cleaning-homes/" class="footer-link text-gray-300 hover:text-white block">تنظيف
+                المنازل</a></li>
+            <li><a href="/services/villa-cleaning-in-jeddah/"
+                class="footer-link text-gray-300 hover:text-white block">تنظيف الفلل</a></li>
+            <li><a href="/services/cleaning-apartments/" class="footer-link text-gray-300 hover:text-white block">تنظيف
+                الشقق</a></li>
+            <li><a href="/services/office-and-company-cleaning/"
+                class="footer-link text-gray-300 hover:text-white block">تنظيف المكاتب والشركات</a></li>
+            <li><a href="/services/majlis-cleaning/" class="footer-link text-gray-300 hover:text-white block"> تنظيف
+                المجالس </a></li>
+          </ul>
+        </div>
+
+        <!-- النشرة البريدية -->
+        <div>
+          <h4 class="text-lg font-bold mb-6 pb-2 border-b border-gray-700">النشرة البريدية</h4>
+          <p class="text-gray-300 mb-4">اشترك في نشرتنا البريدية لتصلك أحدث العروض والتخفيضات</p>
+          <form class="space-y-3">
+            <input type="email" placeholder="بريدك الإلكتروني"
+              class="w-full px-4 py-3 rounded-lg newsletter-input text-white placeholder-gray-400 focus:outline-none">
+            <button type="submit"
+              class="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1">
+              اشترك الآن
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- القسم الأوسط -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-t border-b border-gray-700">
+        <!-- وسائل التواصل -->
+        <div>
+          <h4 class="text-lg font-bold mb-4">تابعنا على</h4>
+          <div class="flex gap-3">
+            <a href="#" aria-label="تابعنا على تويتر"
+              class="social-icon w-12 h-12 rounded-full bg-gray-800 hover:bg-blue-500 flex items-center justify-center text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="تابعنا على إنستجرام"
+              class="social-icon w-12 h-12 rounded-full bg-gray-800 hover:bg-pink-500 flex items-center justify-center text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="تابعنا على سناب شات"
+              class="social-icon w-12 h-12 rounded-full bg-gray-800 hover:bg-yellow-400 flex items-center justify-center text-white">
+              <i class="fab fa-snapchat"></i>
+            </a>
+            <a href="#" aria-label="تابعنا على تيك توك"
+              class="social-icon w-12 h-12 rounded-full bg-gray-800 hover:bg-black flex items-center justify-center text-white">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" aria-label="تابعنا على يوتيوب"
+              class="social-icon w-12 h-12 rounded-full bg-gray-800 hover:bg-red-500 flex items-center justify-center text-white">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- القسم السفلي -->
+      <div class="flex flex-col md:flex-row justify-between items-center pt-8">
+        <div class="text-gray-400 text-center md:text-right mb-4 md:mb-0">
+          <p>© 2024 لمعة كلين - جدة. جميع الحقوق محفوظة.</p>
+        </div>
+
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">سياسة الخصوصية</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">شروط الاستخدام</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">الأسئلة الشائعة</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Simple scroll reveal effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('py-2');
+        nav.classList.remove('py-4');
+      } else {
+        nav.classList.add('py-4');
+        nav.classList.remove('py-2');
+      }
+    });
+  </script>
+  <script src="/asstes/js/script.js"></script>
+
+  <!-- Floating Call and WhatsApp Buttons -->
+  <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+    <a href="tel:0575797438" aria-label="اتصل بنا الآن"
+      class="bg-blue-600 hover:bg-blue-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 transform hover:scale-110">
+      <i class="fas fa-phone text-2xl"></i>
+    </a>
+    <a href="https://wa.me/966575797438" target="_blank" aria-label="تواصل معنا عبر واتساب"
+      class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 transform hover:scale-110">
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+  </div>
+</body>
+
+</html>
