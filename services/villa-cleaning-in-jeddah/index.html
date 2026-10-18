@@ -1174,49 +1174,131 @@
             </div>
         </div>
 
-        <!-- Related Services Section (3 Cards Network Strategy) -->
-        <section class="bg-gray-100 py-16 mt-16 rounded-3xl">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-                        خدمات أخرى مكملة في جدة
-                    </h2>
-                    <p class="text-gray-600 text-lg">
-                        اكتشف باقة خدماتنا المتخصصة للمنازل والمنشآت في جميع أحياء جدة
+        <!-- Related Services Section (Topical Cluster) -->
+        <section class="py-16 bg-slate-50 border-t border-slate-200 mt-12" id="related-services-cluster">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-emerald-600 font-black text-sm uppercase tracking-wide">ترابط الخدمات</span>
+                    <h2 class="text-2xl md:text-4xl font-black text-gray-900 mt-1 mb-3">خدمات تنظيف وتعقيم ذات صلة بجدة</h2>
+                    <p class="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">
+                        نوفر في لمعة كلين باقة متكاملة من حلول النظافة المنزلية والتجارية بأعلى المعايير الألمانية:
                     </p>
                 </div>
-
-                <div class="grid md:grid-cols-3 gap-6">
-                    <!-- 1. تنظيف المنازل -->
-                    <a href="/services/cleaning-homes/"
-                        class="flex bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
-                        <img src="/asstes/img/comprehensive-house-cleaning.webp" alt="شركة تنظيف منازل بجدة"
-                            class="w-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-gray-900 mb-1">تنظيف منازل بجدة</h3>
-                            <p class="text-xs text-gray-500">خدمة شاملة للمنازل والبيوت بأعلى معايير الجودة.</p>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                    
+                    <div class="flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 group">
+                        <img src="/asstes/img/comprehensive-house-cleaning.webp" alt="شركة تنظيف منازل بجدة" class="w-28 sm:w-32 object-cover flex-shrink-0" loading="lazy">
+                        <div class="p-4 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-primary transition-colors">
+                                    <a href="/services/cleaning-homes/">شركة تنظيف منازل بجدة</a>
+                                </h3>
+                                <p class="text-xs text-gray-500 leading-relaxed">نظافة شاملة وعميقة للمنازل والبيوت وجلي الرخام.</p>
+                            </div>
+                            <a href="/services/cleaning-homes/" class="text-primary font-bold text-xs inline-flex items-center gap-1 mt-2 hover:underline">
+                                <span>عرض تفاصيل الخدمة</span>
+                                <i class="fas fa-arrow-left text-[10px]"></i>
+                            </a>
                         </div>
-                    </a>
-
-                    <!-- 2. تنظيف المجالس -->
-                    <a href="/services/majlis-cleaning/"
-                        class="flex bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
-                        <img src="/asstes/img/cleaning-boards.webp" alt="شركة تنظيف مجالس بجدة" class="w-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-gray-900 mb-1">تنظيف مجالس بجدة</h3>
-                            <p class="text-xs text-gray-500">غسيل وتعقيم الكنب والمجالس بأحدث تقنيات البخار.</p>
+                    </div>
+                    
+                    <div class="flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 group">
+                        <img src="/asstes/img/cleaning-cupboards.webp" alt="تنظيف وتعقيم خزانات بجدة" class="w-28 sm:w-32 object-cover flex-shrink-0" loading="lazy">
+                        <div class="p-4 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-primary transition-colors">
+                                    <a href="/services/cabinet-cleaning/">تنظيف وتعقيم خزانات بجدة</a>
+                                </h3>
+                                <p class="text-xs text-gray-500 leading-relaxed">غسيل وتعقيم وعزل خزانات المياه الأرضية والعلوية.</p>
+                            </div>
+                            <a href="/services/cabinet-cleaning/" class="text-primary font-bold text-xs inline-flex items-center gap-1 mt-2 hover:underline">
+                                <span>عرض تفاصيل الخدمة</span>
+                                <i class="fas fa-arrow-left text-[10px]"></i>
+                            </a>
                         </div>
-                    </a>
-
-                    <!-- 3. تنظيف الشقق -->
-                    <a href="/services/cleaning-apartments/"
-                        class="flex bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
-                        <img src="/asstes/img/cleaning-apartments.webp" alt="شركة تنظيف شقق بجدة" class="w-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-gray-900 mb-1">تنظيف شقق بجدة</h3>
-                            <p class="text-xs text-gray-500">نظافة عميقة للشقق السكنية والجديدة والمفروشة.</p>
+                    </div>
+                    
+                    <div class="flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 group">
+                        <img src="/asstes/img/cleaning-boards.webp" alt="شركة تنظيف مجالس بجدة" class="w-28 sm:w-32 object-cover flex-shrink-0" loading="lazy">
+                        <div class="p-4 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-primary transition-colors">
+                                    <a href="/services/majlis-cleaning/">شركة تنظيف مجالس بجدة</a>
+                                </h3>
+                                <p class="text-xs text-gray-500 leading-relaxed">غسيل مجالس وكنب وصالونات بالبخار وإزالة البقع.</p>
+                            </div>
+                            <a href="/services/majlis-cleaning/" class="text-primary font-bold text-xs inline-flex items-center gap-1 mt-2 hover:underline">
+                                <span>عرض تفاصيل الخدمة</span>
+                                <i class="fas fa-arrow-left text-[10px]"></i>
+                            </a>
                         </div>
-                    </a>
+                    </div>
+                    
+                    <div class="flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 group">
+                        <img src="/asstes/img/curtain-cleaning.webp" alt="شركة تنظيف ستائر بجدة" class="w-28 sm:w-32 object-cover flex-shrink-0" loading="lazy">
+                        <div class="p-4 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-primary transition-colors">
+                                    <a href="/curtain-cleaning/">شركة تنظيف ستائر بجدة</a>
+                                </h3>
+                                <p class="text-xs text-gray-500 leading-relaxed">تنظيف الستائر بالبخار دون فك لجميع أنواع الأقمشة.</p>
+                            </div>
+                            <a href="/curtain-cleaning/" class="text-primary font-bold text-xs inline-flex items-center gap-1 mt-2 hover:underline">
+                                <span>عرض تفاصيل الخدمة</span>
+                                <i class="fas fa-arrow-left text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 group">
+                        <img src="/asstes/img/insect-infestation.webp" alt="شركة مكافحة حشرات بجدة" class="w-28 sm:w-32 object-cover flex-shrink-0" loading="lazy">
+                        <div class="p-4 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-primary transition-colors">
+                                    <a href="/services/insect-infestation/">شركة مكافحة حشرات بجدة</a>
+                                </h3>
+                                <p class="text-xs text-gray-500 leading-relaxed">رش مبيدات ألمانية آمنة بدون رائحة بضمان حتى 6 أشهر.</p>
+                            </div>
+                            <a href="/services/insect-infestation/" class="text-primary font-bold text-xs inline-flex items-center gap-1 mt-2 hover:underline">
+                                <span>عرض تفاصيل الخدمة</span>
+                                <i class="fas fa-arrow-left text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 group">
+                        <img src="/asstes/img/apartment-cleaning-company.webp" alt="شركة تنظيف شقق بجدة" class="w-28 sm:w-32 object-cover flex-shrink-0" loading="lazy">
+                        <div class="p-4 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-primary transition-colors">
+                                    <a href="/services/cleaning-apartments/">شركة تنظيف شقق بجدة</a>
+                                </h3>
+                                <p class="text-xs text-gray-500 leading-relaxed">تنظيف شقق مفروشة وجديدة بعد التشطيب وتعقيم كامل.</p>
+                            </div>
+                            <a href="/services/cleaning-apartments/" class="text-primary font-bold text-xs inline-flex items-center gap-1 mt-2 hover:underline">
+                                <span>عرض تفاصيل الخدمة</span>
+                                <i class="fas fa-arrow-left text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Price and Hub Quick Callout Banner -->
+                <div class="bg-gradient-to-r from-slate-900 to-primary rounded-2xl p-6 text-white flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg">
+                    <div>
+                        <h3 class="text-lg font-bold mb-1">هل ترغب في معرفة أسعار كافة خدمات التنظيف بجدة؟</h3>
+                        <p class="text-xs text-slate-300">استعرض جدول المقارنة الشامل للتكاليف والعروض الحالية بخصم 30% مع لمعة كلين.</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="/cleaning-companies-prices-jeddah/" class="bg-secondary hover:bg-emerald-600 text-white font-bold text-xs py-2.5 px-5 rounded-xl transition-colors whitespace-nowrap shadow-md">
+                            جدول أسعار التنظيف
+                        </a>
+                        <a href="/services/" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-xs py-2.5 px-5 rounded-xl transition-colors whitespace-nowrap">
+                            كافة الخدمات (16)
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
