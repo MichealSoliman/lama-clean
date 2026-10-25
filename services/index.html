@@ -258,6 +258,39 @@
               }
             }
           ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://lama-clean.com/services/#howto",
+          "name": "خطوات ومراحل تنفيذ خدمات النظافة بجدة من لمعة كلين",
+          "description": "الدليل الإرشادي المعتمد لخطوات تقديم خدمات التنظيف والتعقيم بجدة بجودة ألمانية وضمان 100%.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "الطلب والمعاينة الفورية",
+              "text": "استقبال طلب العميل، معاينة المساحة وتحديد المنظفات والمعدات المطلوبة مع تقديم تسعير رسمي فوري."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "وصول الطاقم والمعدات الألمانية",
+              "text": "وصول السيارات المجهزة بماكينات البخار وأجهزة جلي الرخام والمنظفات المصرحة في الموعد المحدد."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "التنظيف العميق وجلي الأرضيات",
+              "text": "شفط الأتربة الدقيقة بفلاتر HEPA، تفكيك الدهون والأوساخ، وجلي وتلميع السيراميك والرخام بالكريستال."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "التعقيم والتعطير الحراري",
+              "text": "تطهير الأسطح والمفروشات بالبخار 130 درجة مئوية للقضاء على 99.9% من الجراثيم مع تعطير فرنسي فاخر."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "فحص الجودة وتسليم شهادة الضمان",
+              "text": "مراجعة المكان مع العميل للتأكد من رضاه التام 100% وتسليمه بطاقة الضمان المكتوب."
+            }
+          ]
         }
       ]
     }
@@ -544,6 +577,22 @@
             <button onclick="filterServices('guides')" class="filter-btn font-bold text-xs md:text-sm py-2.5 px-5 rounded-full border border-gray-300 bg-white text-gray-700">
               أدلة الأسعار والمقارنة
             </button>
+          </div>
+          
+          <!-- Quick Page Anchors -->
+          <div class="flex flex-wrap justify-center gap-3 mt-4 text-xs">
+            <a href="#pricing-overview" class="text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-3.5 py-1.5 rounded-full font-bold transition-colors border border-emerald-200">
+              <i class="fas fa-table ml-1"></i> جدول الأسعار الشامل
+            </a>
+            <a href="#work-process" class="text-blue-700 bg-blue-50 hover:bg-blue-100 px-3.5 py-1.5 rounded-full font-bold transition-colors border border-blue-200">
+              <i class="fas fa-tasks ml-1"></i> خطوات العمل الخمس
+            </a>
+            <a href="#customer-reviews" class="text-amber-800 bg-amber-50 hover:bg-amber-100 px-3.5 py-1.5 rounded-full font-bold transition-colors border border-amber-200">
+              <i class="fas fa-star ml-1 text-amber-500"></i> تقييمات العملاء
+            </a>
+            <a href="#faq" class="text-slate-700 bg-slate-100 hover:bg-slate-200 px-3.5 py-1.5 rounded-full font-bold transition-colors border border-slate-200">
+              <i class="fas fa-question-circle ml-1"></i> الأسئلة الشائعة
+            </a>
           </div>
         </div>
 
@@ -1211,6 +1260,359 @@
       </div>
     </section>
 
+    <!-- Comprehensive Pricing & Packages Table Section -->
+    <section id="pricing-overview" class="py-16 lg:py-24 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 font-black text-xs px-4 py-1.5 rounded-full border border-emerald-200 mb-3">
+            <i class="fas fa-tags text-emerald-600"></i> شفافية الأسعار مع خصم فوري 30%
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-4 leading-tight">
+            جدول أسعار وباقات خدمات التنظيف بجدة
+          </h2>
+          <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+            أسعار واضحة وتنافسية مدروسة بعناية تناسب كافة المساحات والقطاعات السكنية والتجارية مع ضمان إعادة التنظيف مجاناً.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto shadow-xl rounded-3xl border border-slate-200">
+          <table class="min-w-full bg-white divide-y divide-slate-200 text-right">
+            <thead class="bg-slate-900 text-white text-xs md:text-sm font-black">
+              <tr>
+                <th class="py-4 px-4 sm:px-6">الخدمة ونطاق العمل</th>
+                <th class="py-4 px-4 sm:px-6">تفاصيل التنظيف والمعدات</th>
+                <th class="py-4 px-4 sm:px-6">المدة التقديرية</th>
+                <th class="py-4 px-4 sm:px-6">السعر التقريبي</th>
+                <th class="py-4 px-4 sm:px-6 text-center">الحجز الفوري</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-xs md:text-sm text-slate-700">
+              <!-- Service 1 -->
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/services/cleaning-homes/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-home text-emerald-600"></i>
+                    <span>تنظيف المنازل والبيوت</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">شامل الغرف والمطابخ والأرضيات</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">جلي وتلميع الرخام، شفط الأتربة بماكينات HEPA، وتعقيم حراري 130°C</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">4 - 6 ساعات</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 350 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">خصم 30% متاح</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D9%84"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 2 -->
+              <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/services/cleaning-apartments/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-building text-blue-600"></i>
+                    <span>تنظيف الشقق السكنية</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">شقق مفروشة، استوديوهات، وما بعد التشطيب</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">غسيل الجدران والأرضيات، فك وغسيل الشبابيك، تعقيم الحمامات والمطابخ</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">3 - 5 ساعات</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 250 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">خصم 30% متاح</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B4%D9%82%D9%82"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 3 -->
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/services/villa-cleaning-in-jeddah/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-landmark text-amber-600"></i>
+                    <span>تنظيف الفلل والقصور</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">الفلل الجديدة، المفروشة، والواجهات والأحواش</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">طاقم متكامل من 5-8 عمال، جلي الرخام بالكريستال، غسيل المسابح والواجهات</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">6 - 8 ساعات</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 800 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">ضمان شامل ومكتوب</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%81%D9%84%D9%84"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 4 -->
+              <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/services/majlis-cleaning/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-couch text-purple-600"></i>
+                    <span>تنظيف المجالس والكنب</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">الكنب الأمريكي، الكلاسيكي، والمجالس الأرضية</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">حقن واستخلاص المنظفات بالبخار الحار وإزالة البقع العنيدة وتعطير فرنسي</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">1.5 - 3 ساعات</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 180 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">تجفيف سريع 90 دقيقة</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%84%D8%B3"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 5 -->
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/carpet-cleaning/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-rug text-rose-600"></i>
+                    <span>تنظيف السجاد والموكيت</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">السجاد الإيراني، التركي، والحرير والموكيت المكتبي</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">غسيل بالرغوة الجافة والفرك الآلي بمكائن دوارة لحماية الأنسجة والألوان</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">1 - 2 ساعة</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 15 ر.س / م²</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">أقل حد أدنى للطلب</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B3%D8%AC%D8%A7%D8%AF"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 6 -->
+              <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/curtain-cleaning/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-scroll text-indigo-600"></i>
+                    <span>تنظيف الستائر بالبخار</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">تنظيف وتعقيم الستائر بمكانها بدون فك</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">أجهزة بخار رأسية بدرجة حرارة تعقيمية تقتل الجراثيم وتفرد الثنيات دون بلل</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">1 - 2 ساعة</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 60 ر.س / ستارة</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">بدون فك أو نقل</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B3%D8%AA%D8%A7%D8%A6%D8%B1"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 7 -->
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/bathroom-cleaning/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-bath text-cyan-600"></i>
+                    <span>تنظيف وتعقيم الحمامات</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">إزالة الصدأ والترسبات والتكلسات والروائح</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">مواد إيطالية لإذابة الكلس، تلميع الإكسسوارات والزجاج، وتطهير البالوعات بالبخار</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">1 - 2 ساعة</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 150 ر.س / حمام</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">تعقيم بكتيري 100%</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%AD%D9%85%D8%A7%D9%85%D8%A7%D8%AA"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 8 -->
+              <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/kitchen-cleaning/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-utensils text-amber-500"></i>
+                    <span>تنظيف المطابخ وإزالة الدهون</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">الشفاطات، الأفران، الخزائن، والسراميك</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">مذيبات دهون عضوية آمنة غذائياً، تعقيم بالبخار الكثيف، وتلميع الرخام الصناعي والطبيعي</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">2 - 4 ساعات</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 250 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">إزالة الزيوت 100%</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%A8%D8%AE"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 9 -->
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/services/cabinet-cleaning/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-faucet-drip text-blue-500"></i>
+                    <span>غسيل وتعقيم خزانات المياه</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">الخزانات الأرضية والعلوية وعزل التشققات</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">سحب الرواسب والطحالب بمضخات غاطسة، فرك الجدران، والتعقيم بالكلور المركز المصرح</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">2 - 3 ساعات</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 250 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">مياه نقية وصالحة</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 10 -->
+              <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/services/insect-infestation/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-shield-virus text-emerald-600"></i>
+                    <span>مكافحة الحشرات والآفات</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">الصراصير، النمل الأبيض، بق الفراش، والقوارض</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">رش مبيدات ألمانية وأمريكية مرخصة من وزارة الصحة، جل بدون مغادرة المنزل وبدون رائحة</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">1 - 2 ساعة</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 200 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">ضمان يصل 6 أشهر</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+              <!-- Service 11 -->
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="py-4 px-4 sm:px-6 font-bold text-slate-900">
+                  <a href="/services/office-and-company-cleaning/" class="hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-briefcase text-slate-700"></i>
+                    <span>تنظيف المكاتب والشركات</span>
+                  </a>
+                  <span class="text-[11px] text-slate-400 block mt-1">المقرات الإدارية، العيادات، وقاعات المؤتمرات</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6">تنظيف الواجهات، الموكيت، تعقيم الحواسيب والمكاتب، وتوفير عمالة نظافة دورية بعقود</td>
+                <td class="py-4 px-4 sm:px-6 font-medium text-slate-500">حسب المساحة</td>
+                <td class="py-4 px-4 sm:px-6">
+                  <span class="text-base md:text-lg font-black text-emerald-700">يبدأ من 450 ر.س</span>
+                  <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-bold block w-fit mt-0.5">عقود سنوية مخفضة</span>
+                </td>
+                <td class="py-4 px-4 sm:px-6 text-center">
+                  <a href="https://wa.me/966575797438?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D9%83%D8%A7%D8%AA%D8%A8"
+                    class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-colors shadow-sm">
+                    <i class="fab fa-whatsapp"></i> احجز الآن
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-6 text-center text-xs text-slate-500 flex flex-wrap items-center justify-center gap-6">
+          <span><i class="fas fa-check-circle text-emerald-600 ml-1"></i> الأسعار شاملة الضريبة والمعدات ومواد التعقيم الألمانية.</span>
+          <span><i class="fas fa-shield-alt text-emerald-600 ml-1"></i> معاينة مجانية داخل أحياء جدة قبل بدء العمل للمساحات الكبيرة.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional 5-Step Work Process Section -->
+    <section id="work-process" class="py-16 lg:py-24 bg-slate-900 text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-flex items-center gap-1.5 bg-emerald-500/20 text-emerald-400 font-black text-xs px-4 py-1.5 rounded-full border border-emerald-500/30 mb-3">
+            <i class="fas fa-cogs"></i> منهجية العمل المعتمدة
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight">
+            كيف نعمل في لمعة كلين لضمان أعلى معايير النظافة؟
+          </h2>
+          <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+            نتبع بروتوكولاً منظماً من 5 خطوات دقيقة تم تطويرها وفقاً لأحدث معايير الجودة الألمانية لإنجاز العمل بأعلى كفاءة وفي الوقت المحدد:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <!-- Step 1 -->
+          <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-2xl relative hover:border-emerald-500 transition-all">
+            <div class="w-12 h-12 bg-emerald-500 text-slate-900 font-black text-xl rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-emerald-500/30">
+              1
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-white">الطلب والمعاينة الفورية</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تلقي طلبك عبر الهاتف أو الواتساب، تحديد نوع الخدمة ومساحة المكان، وتقديم عرض سعر دقيق ومكتوب دون أي مصاريف خفية.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-2xl relative hover:border-emerald-500 transition-all">
+            <div class="w-12 h-12 bg-blue-500 text-white font-black text-xl rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-blue-500/30">
+              2
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-white">وصول الفريق والمعدات</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              وصول طاقم فني محترف في سيارات مجهزة بأحدث أجهزة البخار الحار وماكينات جلي الرخام والمنظفات الألمانية المعتمدة في الموعد المحدد تماماً.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-2xl relative hover:border-emerald-500 transition-all">
+            <div class="w-12 h-12 bg-amber-500 text-slate-900 font-black text-xl rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-amber-500/30">
+              3
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-white">التنظيف العميق والجلي</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              إزالة الأتربة الدقيقة بمرشحات HEPA، تفكيك بقع الدهون المستعصية، جلي الأرضيات وتلميعها، وغسيل المفروشات بتقنية الاستخلاص الحراري.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-2xl relative hover:border-emerald-500 transition-all">
+            <div class="w-12 h-12 bg-purple-500 text-white font-black text-xl rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-purple-500/30">
+              4
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-white">التعقيم والتعطير الشامل</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تطهير كافة الأسطح بمواد معتمدة من هيئة الغذاء والدواء تقتل 99.9% من الفيروسات والبكتيريا، مع تعطير المكان بروائح طبيعية تدوم لأيام.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-2xl relative hover:border-emerald-500 transition-all">
+            <div class="w-12 h-12 bg-emerald-400 text-slate-900 font-black text-xl rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-emerald-400/30">
+              5
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-white">فحص الجودة والضمان</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              معاينة شاملة من مشرف الجودة رفقة العميل للتأكد من الرضا التام بنسبة 100% وتسليم بطاقة الضمان، مع استعداد تام لإعادة تنظيف أي ملاحظة فوراً مجاناً.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Why Choose Us -->
     <section class="py-16 lg:py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1256,6 +1658,106 @@
                 <div class="text-amber-400 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
               </div>
               <p class="text-xs text-slate-300">أكثر من 15,000 عميل يثقون بخدمات لمعة كلين في كافة أحياء جدة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Customer Testimonials Section -->
+    <section id="customer-reviews" class="py-16 lg:py-24 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-700 font-black text-xs px-4 py-1.5 rounded-full border border-amber-200 mb-3">
+            <i class="fas fa-star text-amber-500"></i> تجارب حقيقية موثقة
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-4 leading-tight">
+            ماذا يقول عملاؤنا في أحياء جدة عن خدماتنا؟
+          </h2>
+          <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+            نفخر بتقييم 4.9 من 5 نجوم بناءً على أكثر من 3,500 تقييم من أصحاب المنازل والفلل والشركات في جدة:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Review 1 -->
+          <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-black flex items-center justify-center text-lg shadow-md shadow-emerald-600/20">
+                  ف
+                </div>
+                <div>
+                  <h4 class="font-black text-slate-900 text-base">فيصل العمري</h4>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class="fas fa-map-marker-alt text-emerald-600"></i> حي أبحر الشمالية - جدة
+                  </p>
+                </div>
+              </div>
+              <div class="text-amber-400 text-sm flex gap-0.5">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-slate-700 text-xs md:text-sm leading-relaxed mb-4">
+              "تعاملت مع لمعة كلين لتنظيف الفيلا بالكامل بعد أعمال التشطيب والدهان. بصراحة انبهار تام! شالوا كل بقايا الترويبة وبقع البوية وجلوا الرخام ورجع يلمع زي المراية. الطاقم خلوق جداً والتزموا بالموعد بالدقيقة."
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+              <span class="text-emerald-700 font-bold"><i class="fas fa-check-circle ml-1"></i> تنظيف فيلا بعد البناء</span>
+              <span>منذ يومين</span>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white font-black flex items-center justify-center text-lg shadow-md shadow-blue-600/20">
+                  س
+                </div>
+                <div>
+                  <h4 class="font-black text-slate-900 text-base">سارة باحاذق</h4>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class="fas fa-map-marker-alt text-blue-600"></i> حي الروضة - جدة
+                  </p>
+                </div>
+              </div>
+              <div class="text-amber-400 text-sm flex gap-0.5">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-slate-700 text-xs md:text-sm leading-relaxed mb-4">
+              "غسيل الكنب والمجالس بالبخار عندهم يفوق التوقعات، كان عندي كنب فاتح وفيه بقع قهوة وشوكولاتة قديمة، اختفت تماماً بدون أي ضرر للقماش وتعطيرهم فخم جداً. خدمة عملاء ممتازة وسريعة."
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+              <span class="text-blue-700 font-bold"><i class="fas fa-check-circle ml-1"></i> تنظيف مجالس وسجاد بالبخار</span>
+              <span>منذ 5 أيام</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white font-black flex items-center justify-center text-lg shadow-md shadow-slate-900/20">
+                  م
+                </div>
+                <div>
+                  <h4 class="font-black text-slate-900 text-base">م. طارق الزهراني</h4>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class="fas fa-map-marker-alt text-slate-700"></i> حي الصفا - جدة
+                  </p>
+                </div>
+              </div>
+              <div class="text-amber-400 text-sm flex gap-0.5">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-slate-700 text-xs md:text-sm leading-relaxed mb-4">
+              "طلبنا خدمة تنظيف وتعقيم خزان المياه الأرضي والعلوي مع باقة مكافحة الحشرات. دقة عالية في الفحص وسحب الرواسب وتعقيم بالكلور المصرح. وفروا لنا تقرير مصور قبل وبعد الخدمة وضمان معتمد."
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+              <span class="text-slate-800 font-bold"><i class="fas fa-check-circle ml-1"></i> تنظيف خزانات ومكافحة حشرات</span>
+              <span>منذ أسبوع</span>
             </div>
           </div>
         </div>
