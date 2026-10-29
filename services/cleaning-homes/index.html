@@ -549,9 +549,7 @@
                         <a href="#work-process"
                             class="nav-link block text-gray-600 hover:text-primary transition-all py-2 pr-3 font-bold">2.
                             مراحل وإجراءات العمل</a>
-                        <a href="#calculator"
-                            class="nav-link block text-gray-600 hover:text-primary transition-all py-2 pr-3 font-bold">3.
-                            حاسبة التكلفة الفورية</a>
+                       
                         <a href="#sec1"
                             class="nav-link block text-gray-600 hover:text-primary transition-all py-2 pr-3 font-bold">4.
                             المعايير والحلول الشاملة</a>
@@ -741,83 +739,7 @@
                     </div>
                 </section>
 
-                <!-- سكشن حاسبة تقدير التكلفة الفورية -->
-                <section id="calculator" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-                    <div class="max-w-3xl mx-auto text-center mb-6">
-                        <span
-                            class="inline-block bg-blue-50 text-primary font-bold px-4 py-1 rounded-full text-xs mb-3 border border-blue-100">
-                            <i class="fas fa-calculator ml-1"></i> تقدير فوري وشفاف
-                        </span>
-                        <h2 class="text-2xl md:text-3xl font-black text-gray-900">حاسبة تقدير أسعار تنظيف المنازل بجدة
-                        </h2>
-                        <p class="text-gray-600 text-sm mt-1">اختر مواصفات منزلك ونوع الخدمة لمعرفة السعر التقديري وحجز
-                            الخصم المباشر (30%).</p>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 max-w-2xl mx-auto">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                            <div>
-                                <label for="calc-size" class="block font-bold text-sm text-gray-800 mb-2">نوع وحجم
-                                    العقار:</label>
-                                <select id="calc-size"
-                                    class="w-full bg-white text-gray-800 border border-gray-300 p-3 rounded-xl focus:border-primary focus:outline-none">
-                                    <option value="300">منزل صغير / شقة 2-3 غرف</option>
-                                    <option value="500" selected>منزل متوسط 4-5 غرف</option>
-                                    <option value="750">منزل كبير / 6+ غرف</option>
-                                    <option value="1000">فيلا كاملة / دورين وملاحق</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="calc-type" class="block font-bold text-sm text-gray-800 mb-2">مستوى التنظيف
-                                    المطلوب:</label>
-                                <select id="calc-type"
-                                    class="w-full bg-white text-gray-800 border border-gray-300 p-3 rounded-xl focus:border-primary focus:outline-none">
-                                    <option value="1">تنظيف شامل عادي</option>
-                                    <option value="1.25" selected>تنظيف عميق + تعقيم بالبخار</option>
-                                    <option value="1.5">تنظيف VIP شامل جلي الرخام والكنب</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="bg-white p-6 rounded-xl border border-gray-200 text-center mb-6">
-                            <div class="text-xs text-gray-500 mb-1">السعر التقديري النهائي بعد خصم 30%:</div>
-                            <div id="calc-result" class="text-3xl sm:text-4xl font-black text-primary">450 - 550 ر.س
-                            </div>
-                            <div class="text-xs text-gray-500 mt-1"><i class="fas fa-shield-alt text-primary"></i> يشمل
-                                المعاينة والضمان ومواد التعقيم المعتمدة</div>
-                        </div>
-
-                        <a id="calc-whatsapp-btn"
-                            href="https://wa.me/966542473837?text=مرحباً، أود حجز تنظيف منزل متوسط مع تعقيم بالبخار بالسعر التقديري"
-                            class="w-full bg-primary hover:bg-blue-700 text-white py-3.5 rounded-xl font-bold flex items-center justify-center gap-3 text-base transition-colors shadow">
-                            <i class="fab fa-whatsapp text-xl"></i> احجز الآن عبر الواتساب واحصل على خصم 30%
-                        </a>
-                    </div>
-                </section>
-
-                <script>
-                    function updateCalc() {
-                        const base = parseFloat(document.getElementById('calc-size').value);
-                        const mult = parseFloat(document.getElementById('calc-type').value);
-                        const total = Math.round(base * mult);
-                        const minPrice = total;
-                        const maxPrice = total + Math.round(total * 0.15);
-                        document.getElementById('calc-result').innerText = `${minPrice} - ${maxPrice} ر.س`;
-
-                        const sizeText = document.getElementById('calc-size').options[document.getElementById('calc-size').selectedIndex].text;
-                        const typeText = document.getElementById('calc-type').options[document.getElementById('calc-type').selectedIndex].text;
-                        const msg = `مرحباً لمعة كلين، أود حجز خدمة: ${sizeText} (${typeText}) بسعر تقديري حوالي ${minPrice}-${maxPrice} ر.س بخصم 30%`;
-                        document.getElementById('calc-whatsapp-btn').href = `https://wa.me/966542473837?text=${encodeURIComponent(msg)}`;
-                    }
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const sizeEl = document.getElementById('calc-size');
-                        const typeEl = document.getElementById('calc-type');
-                        if (sizeEl && typeEl) {
-                            sizeEl.addEventListener('change', updateCalc);
-                            typeEl.addEventListener('change', updateCalc);
-                        }
-                    });
-                </script>
+                
 
                 <!-- الفقرة 1 -->
                 <section id="sec1" class="content-section">
